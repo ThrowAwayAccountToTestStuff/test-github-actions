@@ -102,3 +102,9 @@ body:
     attributes:
       label: Real device model
       placeholder: ex. Samsung A22
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional information
+      description: Do you want to share anything else with us?

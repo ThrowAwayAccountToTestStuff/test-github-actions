@@ -84,8 +84,8 @@ body:
       label: Build type
       description: What mode your application is running? During the development it's probably debug mode.
       options:
-        - debug mode
-        - release mode
+        - Debug mode
+        - Release mode
 
   - type: dropdown
     id: emulator

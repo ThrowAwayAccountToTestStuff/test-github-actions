@@ -31,9 +31,9 @@ body:
       label: Steps to reproduce
       description: Provide a detailed list of steps that reproduce the issue.
       placeholder: |
-      1.
-      2.
-      3.
+        1.
+        2.
+        3.
     validations:
       required: true
 

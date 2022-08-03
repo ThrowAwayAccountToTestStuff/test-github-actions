@@ -1,0 +1,103 @@
+name: "\U0001F41E Bug report"
+description: Report an issue with Reanimated
+title: ""
+labels: "needs-review"
+assignees:
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+
+        Before you proceed:
+
+        - Make sure to look for similar issues in the React Native Reanimated repository
+        - Make sure to add `'react-native-reanimated/plugin'` to your `babel.config.js`
+        - Make sure to clean cache in your project (ex. `yarn start --reset-cache` or `npm start -- --reset-cache` or `expo start -c`)
+
+        Please provide all the information requested.
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Please provide a clear and concise description of what the bug is. Include screenshots or a video if needed. Tell us what were you expecting to happen when this occured. 
+    validations:
+      required: true
+
+
+  - type: textarea
+    id: repro
+    attributes:
+      label: Snack or a link to a repository
+      description: |
+        Please provide a Snack (https://snack.expo.io/), a link to a repository on GitHub under your username.
+        Here are some tips for providing a minimal example: [https://stackoverflow.com/help/mcve](https://stackoverflow.com/help/mcve).
+    validations:
+      required: true
+
+  - type: dropdown
+    id: runtime
+    attributes:
+      label: Runtime
+      description: What runtime your application is running on?
+      options:
+        - JSC
+        - Hermes
+        - V8
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: platforms
+    attributes:
+      label: Affected platforms
+      description: What system your application is running on?
+      options:
+        - label: Android
+          required: false
+        - label: iOS
+          required: false
+        - label: Web
+          required: false
+
+  - type: checkboxes
+    id: workflow
+    attributes:
+      label: Workflow
+      options:
+        - label: React Native
+          required: false
+        - label: Expo Bare Workflow
+          required: false
+        - label: Expo Managed
+          required: false
+
+  - type: checkboxes
+    id: architecture
+    attributes:
+      label: Architecture
+      options:
+        - label: Paper (old)
+          required: false
+        - label: Fabric (new)
+          required: false
+
+  - type: dropdown
+    id: emulator
+    attributes:
+      label: Device
+      description: How are you running your app?
+      options:
+        - iOS simulator
+        - Android emulator
+        - real device
+    validations:
+      required: false
+
+  - type: input
+    id: device-model
+    attributes:
+      label: Real device model
+      placeholder: ex. Samsung A22
+    validations:
+      required: false

@@ -11,7 +11,7 @@ body:
 
         - Make sure to look for similar issues in the React Native Reanimated repository
         - Make sure to add `'react-native-reanimated/plugin'` to your `babel.config.js`
-        - Make sure to clean cache in your project. Depending on your setup:
+        - Make sure to clean cache in your project. Depending on your setup this could be done by:
           - `yarn start --reset-cache` or
           - `npm start -- --reset-cache` or
           - `expo start -c`

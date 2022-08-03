@@ -96,9 +96,8 @@ body:
         - iOS simulator
         - Android emulator
         - Real device
-
-  - type: input
-    id: device-model
-    attributes:
-      label: Real device model
-      placeholder: ex. Samsung Galaxy A22
+          - type: input
+            id: device-model
+            attributes:
+              label: Real device model
+              placeholder: ex. Samsung Galaxy A22

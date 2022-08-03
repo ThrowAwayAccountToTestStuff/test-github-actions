@@ -53,11 +53,12 @@ body:
   - type: dropdown
     id: runtime
     attributes:
-      label: Runtime
+      label: JavaScript Runtime
       description: What runtime is your application using?
       options:
         - JSC
         - Hermes
+        - V8
 
   - type: dropdown
     id: workflow

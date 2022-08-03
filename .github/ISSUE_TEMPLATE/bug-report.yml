@@ -11,7 +11,10 @@ body:
 
         - Make sure to look for similar issues in the React Native Reanimated repository
         - Make sure to add `'react-native-reanimated/plugin'` to your `babel.config.js`
-        - Make sure to clean cache in your project (ex. `yarn start --reset-cache` or `npm start -- --reset-cache` or `expo start -c`)
+        - Make sure to clean cache in your project. Depending on your setup:
+          - `yarn start --reset-cache` or
+          - `npm start -- --reset-cache` or
+          - `expo start -c`
 
         Please provide all the information requested.
   - type: textarea
@@ -54,17 +57,13 @@ body:
       options:
         - JSC
         - Hermes
-        - V8
-    validations:
-      required: true
-
 
   - type: dropdown
     id: workflow
     attributes:
       label: Workflow
       options:
-        - React Native
+        - React Native (without Expo)
         - Expo Bare Workflow
         - Expo Managed
 
@@ -75,6 +74,14 @@ body:
       options:
         - Paper (current)
         - Fabric (new)
+
+  - type: dropdown
+    id: build-type
+    attributes:
+      label: Build type
+      options:
+        - debug mode
+        - release mode
 
   - type: dropdown
     id: emulator

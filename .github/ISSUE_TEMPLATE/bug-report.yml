@@ -36,6 +36,14 @@ body:
     validations:
       required: true
 
+  - type: input
+    id: reanimated-version
+    attributes:
+      label: What version of `react-native-reanimated` are you using?
+      placeholder: v2.9.0
+    validations:
+      required: true
+
   - type: dropdown
     id: platforms
     attributes:
@@ -96,8 +104,9 @@ body:
         - iOS simulator
         - Android emulator
         - Real device
-          - type: input
-            id: device-model
-            attributes:
-              label: Real device model
-              placeholder: ex. Samsung Galaxy A22
+
+    - type: input
+      id: device-model
+      attributes:
+        label: Real device model
+        placeholder: ex. Samsung Galaxy A22

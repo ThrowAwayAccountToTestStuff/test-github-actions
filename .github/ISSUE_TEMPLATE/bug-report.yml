@@ -52,8 +52,8 @@ body:
     id: reanimated-version
     attributes:
       label: Reanimated version
-      description: What version of react-native-eanimated are you using?
-      placeholder: v2.9.0
+      description: What version of react-native-ranimated are you using?
+      placeholder: 2.9.0
     validations:
       required: true
 
@@ -61,8 +61,8 @@ body:
     id: react-native-version
     attributes:
       label: React Native version
-      description: What version of React Native are you using?
-      placeholder: v0.69.0
+      description: What version of react-native are you using?
+      placeholder: 0.69.0
     validations:
       required: true
 
@@ -103,7 +103,7 @@ body:
     id: architecture
     attributes:
       label: Architecture
-      description: What architecture your application is running on? If you're not sure then it's probably Paper.
+      description: What architecture your application is running on?
       options:
         - Paper (current)
         - Fabric (new)
@@ -112,7 +112,7 @@ body:
     id: build-type
     attributes:
       label: Build type
-      description: What mode your application is running? During the development it's probably debug mode.
+      description: What mode your application is running?
       options:
         - Debug mode
         - Release mode

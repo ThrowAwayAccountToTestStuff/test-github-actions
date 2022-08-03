@@ -34,6 +34,19 @@ body:
       required: true
 
   - type: dropdown
+    id: platforms
+    attributes:
+      label: Platforms
+      description: On what system your application is running on?
+      multiple: true
+      options:
+        - Android
+        - iOS
+        - Web
+    validations:
+      required: true
+
+  - type: dropdown
     id: runtime
     attributes:
       label: Runtime
@@ -45,16 +58,6 @@ body:
     validations:
       required: true
 
-  - type: dropdown
-    id: platforms
-    attributes:
-      label: Affected platforms
-      description: What system your application is running on?
-      multiple: true
-      options:
-        - Android
-        - iOS
-        - Web
 
   - type: dropdown
     id: workflow

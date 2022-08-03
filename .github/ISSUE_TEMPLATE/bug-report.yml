@@ -52,7 +52,7 @@ body:
     id: reanimated-version
     attributes:
       label: Reanimated version
-      description: What version of react-native-ranimated are you using?
+      description: What version of react-native-reanimated are you using?
       placeholder: 2.9.0
     validations:
       required: true

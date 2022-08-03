@@ -21,18 +21,19 @@ body:
     id: description
     attributes:
       label: Description
-      description: Please provide a clear and concise description of what the bug is. Include screenshots or a video if needed. Tell us what were you expecting to happen when this occured. 
+      description: Please provide a clear and concise description of what the bug is. Include screenshots or a video if needed. Tell us what were you expecting to happen instead of what is happening now. 
     validations:
       required: true
 
 
-  - type: textarea
+  - type: input
     id: repro
     attributes:
       label: Snack or a link to a repository
       description: |
-        Please provide a Snack (https://snack.expo.io/), a link to a repository on GitHub under your username.
+        Please provide a Snack (https://snack.expo.io/), a link to a repository on GitHub under your username that reproduces the issue.
         Here are some tips for providing a minimal example: [https://stackoverflow.com/help/mcve](https://stackoverflow.com/help/mcve).
+      placeholder: Link to a Snack or a GitHub repository
     validations:
       required: true
 
@@ -40,7 +41,7 @@ body:
     id: platforms
     attributes:
       label: Platforms
-      description: On what system your application is running on?
+      description: On what platform your application is running on?
       multiple: true
       options:
         - Android
@@ -53,7 +54,7 @@ body:
     id: runtime
     attributes:
       label: Runtime
-      description: What runtime your application is running on?
+      description: What runtime is your application using?
       options:
         - JSC
         - Hermes
@@ -62,15 +63,17 @@ body:
     id: workflow
     attributes:
       label: Workflow
+      description: How your application is managed? Not sure? Read [this part of Expo documentation](https://docs.expo.dev/introduction/managed-vs-bare/)
       options:
         - React Native (without Expo)
-        - Expo Bare Workflow
-        - Expo Managed
+        - Expo bare workflow
+        - Expo managed workflow
 
   - type: dropdown
     id: architecture
     attributes:
       label: Architecture
+      description: What architecture your application is running on? If you're not sure then it's probably Paper.
       options:
         - Paper (current)
         - Fabric (new)
@@ -79,6 +82,7 @@ body:
     id: build-type
     attributes:
       label: Build type
+      description: What mode your application is running? During the development it's probably debug mode.
       options:
         - debug mode
         - release mode
@@ -87,7 +91,7 @@ body:
     id: emulator
     attributes:
       label: Device
-      description: How are you running your app?
+      description: How are you running your application?
       options:
         - iOS simulator
         - Android emulator

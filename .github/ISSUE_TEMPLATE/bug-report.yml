@@ -16,7 +16,6 @@ body:
           - `npm start -- --reset-cache` or
           - `expo start -c`
 
-        Please provide all the information requested.
   - type: markdown
     attributes:
       value: |

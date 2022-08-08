@@ -1,5 +1,5 @@
 name: Bug report
-description: Report an issue with Reanimated
+description: Report an issue with Reanimated here.
 labels: "needs-review"
 body:
   - type: markdown

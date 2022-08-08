@@ -1,4 +1,4 @@
-name: "\U0001F41E Bug report"
+name: Bug report
 description: Report an issue with Reanimated
 labels: "needs-review"
 body:

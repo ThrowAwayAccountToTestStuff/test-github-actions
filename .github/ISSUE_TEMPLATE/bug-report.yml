@@ -17,6 +17,10 @@ body:
           - `expo start -c`
 
         Please provide all the information requested.
+  - type: markdown
+    attributes:
+      value: |
+        # Required information
   - type: textarea
     id: description
     attributes:
@@ -79,6 +83,13 @@ body:
         - Web
     validations:
       required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        # Additonal information
+
+        Providing as much information as possible greatly helps us with reproducting the issues.
 
   - type: dropdown
     id: runtime

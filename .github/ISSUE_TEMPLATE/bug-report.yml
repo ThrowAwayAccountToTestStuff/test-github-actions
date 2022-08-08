@@ -20,7 +20,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        # Required information
+        ## Required information
   - type: textarea
     id: description
     attributes:
@@ -87,7 +87,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        # Additonal information
+        ## Additonal information
 
         Providing as much information as possible greatly helps us with reproducting the issues.
 

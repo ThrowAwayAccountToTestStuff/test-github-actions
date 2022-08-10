@@ -144,6 +144,11 @@ body:
       label: Device model
       description: On what device you are experiencing this problem? Specify full device name and the name and version of the operating system it's running.
       placeholder: ex. Samsung Galaxy A22 (Android 12)
+  
+  - type: markdown
+    attributes:
+      value: |
+        ### Acknowledgements
 
   - type: dropdown
     id: acknowledgement

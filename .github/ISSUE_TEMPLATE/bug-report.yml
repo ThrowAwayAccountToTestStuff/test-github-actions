@@ -149,8 +149,8 @@ body:
     id: acknowledgement
     attributes:
       label: I searched for simmilar issues in the repository.
-      description: How are you running your application?
       options:
         - Yes
+        - No
     validations:
       required: true

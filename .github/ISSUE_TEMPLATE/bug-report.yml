@@ -150,7 +150,6 @@ body:
     attributes:
       label: I searched for simmilar issues in the repository.
       options:
-        - Yes
-        - No
+        - 'Yes'
     validations:
       required: true

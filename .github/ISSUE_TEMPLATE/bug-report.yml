@@ -1,6 +1,6 @@
 name: Bug report
 description: Report an issue with Reanimated here.
-labels: "needs-review"
+labels: 'needs-review'
 body:
   - type: markdown
     attributes:
@@ -14,7 +14,7 @@ body:
         - Make sure to clean cache in your project. Depending on your setup this could be done by:
           - `yarn start --reset-cache` or
           - `npm start -- --reset-cache` or
-          - `expo start -c`
+          - `expo start --clear`
 
   - type: markdown
     attributes:
@@ -24,7 +24,7 @@ body:
     id: description
     attributes:
       label: Description
-      description: Please provide a clear and concise description of what the bug is. Include screenshots or a video if needed. Tell us what were you expecting to happen instead of what is happening now. 
+      description: Please provide a clear, concise and descriptive explaination of what the bug is. Include screenshots or a video if needed. Tell us what were you expecting to happen instead of what is happening now.
     validations:
       required: true
 
@@ -114,10 +114,10 @@ body:
     id: architecture
     attributes:
       label: Architecture
-      description: What React Native architecture your application is running on?
+      description: What React Native architecture your application is running on? Currently, the default architecture on React Native is Paper so if you haven't changed it your application select this option.
       options:
-        - Paper (current)
-        - Fabric (new)
+        - Paper (Old Architecture)
+        - Fabric (New Architecture)
 
   - type: dropdown
     id: build-type
@@ -141,5 +141,16 @@ body:
   - type: input
     id: device-model
     attributes:
-      label: Real device model
-      placeholder: ex. Samsung Galaxy A22
+      label: Device model
+      description: On what device you are experiencing this problem? Specify full device name and the name and version of the operating system it's running.
+      placeholder: ex. Samsung Galaxy A22 (Android 12)
+
+  - type: dropdown
+    id: acknowledgement
+    attributes:
+      label: I searched for simmilar issues in the repository.
+      description: How are you running your application?
+      options:
+        - Yes
+    validations:
+      required: true

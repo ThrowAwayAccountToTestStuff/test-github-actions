@@ -145,12 +145,12 @@ body:
       description: On what device you are experiencing this problem? Specify full device name and the name and version of the operating system it's running.
       placeholder: ex. Samsung Galaxy A22 (Android 12)
 
-  # - type: dropdown
-  #   id: acknowledgement
-  #   attributes:
-  #     label: I searched for simmilar issues in the repository.
-  #     options:
-  #       - Yes
-  #       - No
-  #   validations:
-  #     required: true
+  - type: dropdown
+    id: acknowledgement
+    attributes:
+      label: I searched for simmilar issues in the repository.
+      options:
+        - Yes
+        - No
+    validations:
+      required: true

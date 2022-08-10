@@ -151,10 +151,10 @@ body:
         ### Acknowledgements
 
   - type: dropdown
-    id: acknowledgement
+    id: acknowledgements
     attributes:
-      label: ' \n'
-      description: I searched for simmilar issues in the repository.
+      label: Acknowledgements
+      description: I searched for similar issues in the repository.
       options:
         - 'Yes'
     validations:
